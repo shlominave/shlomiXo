@@ -69,7 +69,14 @@ public class MainActivity extends AppCompatActivity {
             return true;
         } else return false;
     }
-
+    private void displayWinner(String winner)
+    {
+        AlertDialog.Builder adb=new AlertDialog.Builder(this);
+        adb.setTitle("THE WINNER IS:");
+        adb.setMessage(winner);
+        adb.setPositiveButton("ok",null);
+        adb.create().show();
+    }
        /**  public void  mobilechooses()
             {
 
@@ -234,15 +241,9 @@ public class MainActivity extends AppCompatActivity {
                else return 8;
             }
 
-          private void displayWinner(String winner)
-            {
-                AlertDialog.Builder adb=new AlertDialog.Builder(this);
-                adb.setTitle("THE WINNER IS:");
-                adb.setMessage(winner);
-                adb.setPositiveButton("ok",null);
-                adb.create().show();
-            }
+
         }
 */
+
 }
 
